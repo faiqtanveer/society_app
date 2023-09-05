@@ -7,9 +7,11 @@ class ErrorPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold
-      (
-      appBar: AppBar(),
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Faiq errorpage",),
+      ),
       body: Container(
         child: Center(
           child: Text('ErrorPage'),

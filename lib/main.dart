@@ -18,32 +18,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp.router(
+      routerConfig: AppRouter.returnRouter(true),
       debugShowCheckedModeBanner: false,
-      routeInformationParser: AppRouter.returnRouter(true).routeInformationParser,
-      routerDelegate: AppRouter.returnRouter(true).routerDelegate,
-      routeInformationProvider: AppRouter.returnRouter(true).routeInformationProvider,
+      // routeInformationParser: AppRouter.returnRouter(true).routeInformationParser,
+      // routerDelegate: AppRouter.returnRouter(true).routerDelegate,
+      // routeInformationProvider: AppRouter.returnRouter(true).routeInformationProvider,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
     );
 
-
-
   }
 
 }
 
 
-// return MaterialApp.router(
-// debugShowCheckedModeBanner: false,
-// routeInformationParser: AppRouter.returnRouter(true).routeInformationParser,
-// routerDelegate: AppRouter.returnRouter(true).routerDelegate,
-// routeInformationProvider: AppRouter.returnRouter(true).routeInformationProvider,
-// theme: ThemeData(
-// colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-// useMaterial3: true,
-// ),
-// );
+
+
+
+
 
 

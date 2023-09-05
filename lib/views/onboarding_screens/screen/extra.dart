@@ -1,27 +1,27 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Extra extends StatefulWidget {
+  const Extra({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Extra> createState() => _ExtraState();
 }
 
-class _LoginState extends State<Login> {
+class _ExtraState extends State<Extra> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Faiq loginpage",),
+        title: Text("Faiq Extrapage",),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("login"),
+            Text("Extra"),
           ],
         ),
       ),
